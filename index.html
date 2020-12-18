@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Proje1</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+        <style>
+            #map {
+                position: absolute; 
+                top: 100; 
+                bottom:400; 
+                left: 50; 
+                right: 50;
+            }
+            #menu ul {
+                text-align: left;
+                margin: 0;
+                background-color: #353038;
+                list-style: none;
+            }
+            #menu ul li{
+                display: inline;
+            }
+            #menu ul li a {
+                padding: 15px 10px;
+                display: inline-block;
+
+                color: aliceblue;
+                text-decoration: none;
+
+                font-size: large;
+            }
+            #menu ul li a:hover{
+                color:#666699;
+            }
+            footer {
+                position: relative;
+                top: 800;
+                background-color: #353038;
+            }
+            #footer{
+                color: aliceblue;
+                font-size: small;
+                text-align: center;
+            }
+        </style>        
+    </head>
+
+    <header>
+        <div id= "menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="src/pages/AboutUs/AboutUs.html">About us</a>
+                    <a href="src/pages/Contact/contato.html">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <div id="map"></div>
+        <script>
+            let requestURL = " http://localhost:3000/postos";
+            let request = new XMLHttpRequest();
+
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+
+            //let nomeBusca = "Idalina dos Santos";
+            
+
+            request.onload = function () {
+                let pontos = request.response;
+
+                var map = L.map('map').setView([-22.9064, -47.0616], 12);
+                //mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                
+                for (var i = 0; i < pontos.length; i++) {
+                    marker = new L.marker([pontos[i].latitude, pontos[i].longitude])
+                        .bindPopup("Nome: "+pontos[i].nome+" \ntelefone: "+pontos[i].telefone+"")
+                        .addTo(map);
+                }
+
+                /*L.marker([-41.3058, 174.82082]).addTo(map)
+                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                .openPopup();*/
+
+                // escritoras.map( (escritora) => {
+                //     console.log(escritora.nome);
+                //     if(nomeBusca === escritora.nome){
+                //         alert("Escritora encontrada");
+                //     }
+                // })
+            }            
+        </script>             
+        <footer>
+            <hr>
+            <p id="footer">Todos os direitos reservados.</p>
+            <hr> 
+        </footer>
+        
+    </body>
+</html>

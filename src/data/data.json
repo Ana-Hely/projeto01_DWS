@@ -1,0 +1,96 @@
+{
+    "postos": [
+        {
+            "nome": "Centro de Saúde - \"Mário de Campos Bueno Júnior\"",
+            "telefone": "(19)3231-9016",
+            "rua": "Rua Padre Vieira - 1145",
+            "bairro": "Centro",
+            "cidade": "Campinas - SP",
+            "latitude": -22.89931845467856,  
+            "longitude": -47.054656975807376
+        },
+        {
+            "nome": "Centro de Saúde - \"Dr. Manoel Rios Muraro\" (Paranapanema)",
+            "telefone": "(19)3252-7189",
+            "rua": "R. Boaventura Lemos, 590",
+            "bairro": "Jardim Guarani",
+            "cidade": "Campinas - SP",
+            "latitude": -22.908183602326513,  
+            "longitude": -47.039134563723465
+        },
+        {
+            "nome": "Centro de Saúde - Boa Esperança",
+            "telefone": "(19)3206-0297",
+            "rua": "Rua Professor Renê de Oliveira Barreto, 440",
+            "bairro": "Jardim Boa Esperança",
+            "cidade": "Campinas - SP",
+            "latitude": -22.873577646816976, 
+            "longitude": -47.027337530539704
+        },
+        {
+            "nome": "Centro de Saúde Dr. Pedro Agápio de Aquino Netto - Balão do Laranja",
+            "telefone": "(19)3229-9865",
+            "rua": "Av. Paulo Provenza Sobrinho, 35",
+            "bairro": "Jardim Campos Eliseos",
+            "cidade": "Campinas - SP",
+            "latitude": -22.923338802414932,  
+            "longitude": -47.100603315575746
+        },
+        {
+            "nome": "Centro de Saúde Vila União",
+            "telefone": "(19)3223-2889",
+            "rua": "R. José Lourenço de Sá, 70",
+            "bairro": "Parque Res. Vila União",
+            "cidade": "Campinas - SP",
+            "latitude": -22.934654088850184,  
+            "longitude": -47.12077979359382
+        },
+        {
+            "nome": "Centro de Saúde -\"Tancredo Neves\" (Campos Elíseos)",
+            "telefone": "(19)3227-3811",
+            "rua": "Av. Tancredo Neves, 5101",
+            "bairro": "Jardim Indianópolis",
+            "cidade": "Campinas - SP",
+            "latitude": -22.936554184090742, 
+            "longitude": -47.100835478590405
+        },
+        {
+            "nome": "Centro de Saúde Faria Lima",
+            "telefone": "(19)3274-1888",
+            "rua": "Av. Pref. Faria Lima, 90",
+            "bairro": "Parque Italia",
+            "cidade": "Campinas - SP",
+            "latitude": -22.911534128310404,   
+            "longitude": -47.06782419858476
+        },
+        {
+            "nome": "Centro de Saúde Professora Ângela de Campos Trentin",
+            "telefone": "(19)3228-6168",
+            "rua": "Av. Márcio Egídio de Souza Aranha, 351",
+            "bairro": "Jardim Ipaussurama",
+            "cidade": "Campinas - SP",
+            "latitude": -22.92435737389517, 
+            "longitude": -47.12173740585073
+        },
+        {
+            "nome": "Centro de Saúde - \"Dr. Armando Rocha Brito Júnior\" (Jardim Capivari)",
+            "telefone": "(19)3223-4533",
+            "rua": "R. Paulo Mangabeira Albernaz, 710",
+            "bairro": "Jardim Capivari",
+            "cidade": "Campinas - SP",
+            "latitude": -22.943257863193256,  
+            "longitude": -47.11222659541289
+        },
+        {
+            "nome": "UBS Jurema",
+            "telefone": "(19)3869-3222",
+            "rua": "R. José de Sales Pupo, 71",
+            "bairro": "Jardim Jurema",
+            "cidade": "Valinhos - SP",
+            "latitude": -22.94673561041698,  
+            "longitude": -47.009229771997276
+        }
+
+    ]
+    
+}

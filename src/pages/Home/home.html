@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <header>
+        <div id= "menu">
+            <ul>
+                <li>
+                    <a href="../AboutUs/AboutUs.html"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <h1>Bem Vindo!</h1>
+        <div id="map"></div>
+
+        <script>
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([51.5, -0.09]).addTo(map)
+                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                .openPopup();
+        </script>
+    </body>
+</html>
